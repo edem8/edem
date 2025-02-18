@@ -1,0 +1,14 @@
+svg {
+  animation: rotate 3s;
+  opacity: 1;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(-80deg);
+  }
+
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
