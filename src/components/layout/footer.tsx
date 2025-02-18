@@ -11,7 +11,7 @@ export default function Footer() {
           <span className=" p-1 rounded text-[#E94898] bg-[#45353d]">2025</span>
           .2.16/1
         </p>
-        <p>Shadcn + Next + Github Pages</p>
+        <p>Shadcn + Next + Vercel</p>
         <p>
           Source code:{" "}
           <a
