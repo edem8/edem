@@ -9,8 +9,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
-import { features } from "@/data/data";
-import { Ultra } from "next/font/google";
 import Link from "next/link";
 
 export default function About() {

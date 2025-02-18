@@ -1,12 +1,8 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, DM_Sans } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import "../styles/globals.css";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-});
 
 const dm_sans = DM_Sans({
   subsets: ["latin"],
