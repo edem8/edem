@@ -49,7 +49,7 @@ export default function Header() {
           href="/guests"
         >
           <Users color="#4B4438" />
-          Guest Book
+          Guest
         </Link>
       </nav>
     </header>
