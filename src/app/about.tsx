@@ -13,14 +13,14 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <div className="flex flex-col sm:gap-6 gap-5 lg:w-3/4 w-full row-start-2 font-semibold pt-10 sm:pt-12">
-      <div className="tracking-wider text-sm space-y-2">
+    <div className="flex flex-col sm:gap-6 gap-5 lg:w-3/4 w-full row-start-2 font-medium pt-10 sm:pt-20">
+      <div className="tracking-wider text-lg space-y-2">
         <p>
-          <span className="text-green-500 bg-[#232D27] pt-1 pb-1 pl-4 pr-4 border rounded-2xl  font-semibold border-green-500">
+          <span className="text-green-500 bg-[#232D27] pt-1 pb-1 pl-4 pr-4 border rounded-2xl   border-green-500">
             Ayekoo!
           </span>
         </p>
-        <p className="sm:text-base">いらっしゃいませ</p>
+        <p className="sm:text-base font-semibold">いらっしゃいませ</p>
       </div>
 
       <div className="text-xs sm:text-base">

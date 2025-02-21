@@ -1,61 +1,55 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { FolderKanban, Glasses, Shell, Users } from "lucide-react";
 
 export default function Header() {
+  const pathname = usePathname();
+
+  const getLinkClasses = (path: string) =>
+    pathname === path
+      ? "border-zinc-600 bg-[#404040] border text-white"
+      : "hover:bg-[#262626]";
+
   return (
-    <header className="flex flex-col gap-2 pb-1 sm:pb-3 sm:pt-3 pt-10 lg:w-3/4 w-full row-start-1 font-semibold">
-      <nav className=" flex flex-col xxs:flex-row xs:gap-2 gap-0  items-start justify-start sm:text-base text-xs xs:text-sm font-semibold">
+    <header className="flex flex-col gap-2 pb-1 sm:pb-3 sm:pt-3 pt-10 lg:w-3/4 w-full row-start-1 ">
+      <nav className=" flex flex-col xxs:flex-row xs:gap-2 gap-0  items-start justify-start sm:text-base text-xs  font-semibold">
         <Link
-          className="flex items-center xs:gap-1.5 gap-1 hover:bg-[#262626] border rounded-lg p-1 pl-2 pr-2 border-zinc-600 bg-[#404040] text-white"
+          className={`flex items-center xs:gap-1.5 gap-1   rounded-lg p-1 pl-2 pr-2  ${getLinkClasses(
+            "/"
+          )} `}
           href="/"
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
+          <Shell color="#EC7C4C" />
           Home
         </Link>
         <Link
-          className="flex items-center xs:gap-1.5 gap-1 hover:bg-[#262626] p-1 pl-2 pr-2 rounded-lg"
+          className={`flex items-center xs:gap-1.5 gap-1   rounded-lg p-1 pl-2 pr-2  ${getLinkClasses(
+            "/projects"
+          )} `}
           href={"/projects"}
         >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
+          <FolderKanban color="#F3C725" />
           Projects
         </Link>
         <Link
-          className="flex items-center xs:gap-1.5 gap-1 hover:bg-[#262626] p-1 pl-2 pr-2 rounded-lg"
+          className={`flex items-center xs:gap-1.5 gap-1   rounded-lg p-1 pl-2 pr-2  ${getLinkClasses(
+            "/blogs"
+          )} `}
           href={"/blogs"}
         >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
+          <Glasses color="pink" />
           Blog
         </Link>
         <Link
-          className="flex items-center xs:gap-1.5 rounded-lg gap-1 hover:bg-[#2d2d2d] p-1 pl-2 pr-2"
+          className={`flex items-center xs:gap-1.5 gap-1   rounded-lg p-1 pl-2 pr-2  ${getLinkClasses(
+            "/guests"
+          )} `}
           href="/guests"
         >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
+          <Users color="#4B4438" />
           Guest Book
         </Link>
       </nav>

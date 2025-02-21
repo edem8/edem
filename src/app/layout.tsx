@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 import "../styles/globals.css";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 
-const dm_sans = DM_Sans({
+const inter = Inter({
   subsets: ["latin"],
-  weight: "300",
+  weight: ["400", "500", "700"],
 });
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={dm_sans.className}>
+      <body className={inter.className}>
         <div className="grid grid-rows-[auto_1fr_auto] justify-items-center bg-background min-h-screen gap-16 p-5 sm:p-20 font-[family-name:var(--font-geist-sans)]">
           <Header />
 
