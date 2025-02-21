@@ -21,7 +21,7 @@ export default function Header() {
           )} `}
           href="/"
         >
-          <Shell color="#EC7C4C" />
+          <Shell color="#985133" />
           Home
         </Link>
         <Link
@@ -30,7 +30,7 @@ export default function Header() {
           )} `}
           href={"/projects"}
         >
-          <FolderKanban color="#F3C725" />
+          <FolderKanban color="#967d20" />
           Projects
         </Link>
         <Link
@@ -48,7 +48,7 @@ export default function Header() {
           )} `}
           href="/guests"
         >
-          <Users color="#4B4438" />
+          <Users color="#776d5a" />
           Guest
         </Link>
       </nav>

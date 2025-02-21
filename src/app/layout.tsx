@@ -6,7 +6,7 @@ import Footer from "@/components/layout/footer";
 
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["300", "400", "500", "700"],
 });
 
 export const metadata: Metadata = {
