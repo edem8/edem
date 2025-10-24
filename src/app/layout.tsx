@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter_Tight } from "next/font/google";
 import "../styles/globals.css";
+import "../styles/shimmer.css"
 import Header from "@/components/layout/header";
 
 const inter = Inter_Tight({

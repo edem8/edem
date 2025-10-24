@@ -64,7 +64,7 @@ export default function Header() {
       <div className="flex items-center space-x-6 text-[11.5px] font-medium px-2">
         {navItems.map(({ name, href, icon: Icon }) => {
           const isActive = pathname === href;
-         
+
           return (
             <Link
               key={name}
@@ -76,7 +76,16 @@ export default function Header() {
               }`}
             >
               {isActive && <Icon size={14} strokeWidth={2.5} />}
-              <span>{name}</span>{name == "BUILDS" && (<sup className="bg-orange-400 rounded-full mb-2 p-1.5"></sup>)}
+              <span>{name}</span>
+              {name == "BUILDS" && (
+                <sup className="relative inline-block w-3 h-3 mb-2 rounded-full bg-orange-400 overflow-hidden shadow-[0_0_6px_rgba(249,115,22,0.6)]">
+                  <span
+                    className="absolute inset-0 bg-[linear-gradient(120deg,transparent_0%,rgba(255,255,255,0.3)_40%,transparent_70%)]
+                 bg-[length:200%_100%] animate-shimmer"
+                    aria-hidden="true"
+                  />
+                </sup>
+              )}
             </Link>
           );
         })}
