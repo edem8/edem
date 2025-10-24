@@ -1,6 +1,5 @@
 import React from "react";
-import About from "./about";
 
 export default function Page() {
-  return <About />;
+  return <div className="flex-1"></div>;
 }

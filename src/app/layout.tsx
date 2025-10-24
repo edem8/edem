@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter_Tight } from "next/font/google";
 import "../styles/globals.css";
 import Header from "@/components/layout/header";
-import Footer from "@/components/layout/footer";
 
-const inter = Inter({
+const inter = Inter_Tight({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
+  weight: ["600"],
 });
 
 export const metadata: Metadata = {
   title: "Edem Kwaku",
-  description: "Portfolio Website",
+  description: " portfolio",
 };
 
 export default function RootLayout({
@@ -21,14 +20,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div className="grid grid-rows-[auto_1fr_auto] justify-items-center bg-background min-h-screen gap-16 p-5 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <body
+        className={`${inter.className} scroll-smooth antialiased bg-primary`}
+      >
+        <main className="container flex flex-col  mx-auto px-4 sm:px-20 lg:px-30 xl:px-40">
           <Header />
-
           {children}
-
-          <Footer />
-        </div>
+        </main>
       </body>
     </html>
   );
