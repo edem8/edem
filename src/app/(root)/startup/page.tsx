@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUpRight, ArrowLeft } from "lucide-react";
+import { ArrowUpRight, ArrowLeft, RectangleGoggles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function StartUp() {
@@ -39,7 +39,7 @@ export default function StartUp() {
                   href="#"
                   className="inline-flex items-center gap-2 p-2 text-xs rounded bg-background text-foreground hover:text-primary transition-colors"
                 >
-                  <ArrowUpRight className="w-5 h-5" strokeWidth={1.9} />
+                  <ArrowUpRight className="w-5 h-5" strokeWidth={1.6} />
                   move.com
                 </a>
               </Section>
@@ -66,16 +66,30 @@ export default function StartUp() {
           </div>
 
           {/* Right Column */}
-          <div className="flex items-center justify-center bg-secondary">
-            <div className="w-full h-full bg-muted-foreground" />
+          <div className="flex items-center justify-center bg-white">
+            <div className="flex items-center gap-0.5 ">
+              <RectangleGoggles
+                className="w-[100px]  h-[100px]"
+                fill="#1424EA"
+                stroke="white"
+              />
+              <span className=" bg-[#1424EA] rounded-full p-2.5 translate-y-2"></span>
+            </div>
           </div>
         </div>
 
         {/*  R2  */}
         <div className="grid grid-cols-2 min-h-[550px]">
           {/* Left Column */}
-          <div className="flex items-center justify-center border-r border-muted-foreground bg-secondary">
-            <div className="w-full h-full bg-muted-foreground" />
+          <div className="flex items-center justify-center  bg-[#1424EA]">
+            <div className="flex items-center gap-0.5 ">
+              <RectangleGoggles
+                className="w-[100px]  h-[100px]"
+                fill="white"
+                stroke="#1424EA"
+              />
+              <span className=" bg-white rounded-full p-2.5 translate-y-2"></span>
+            </div>
           </div>
 
           {/* Right Column */}
@@ -84,13 +98,11 @@ export default function StartUp() {
             <div className="space-y-4">
               <Section title="LOGO">
                 <p className="text-sm leading-relaxed text-foreground">
-                  Headroom gives small businesses a platform to build custom
-                  AI-powered software to run their workflows. The logo is made
-                  of a clean square, supported by a bold and prominent base. It
-                  visualizes the value proposition of Headroom—literally—giving
-                  space for business owners to grow by providing them with a
-                  stable ground to run their work on. It celebrates empty space
-                  to reflect both peace of mind and room for growth.
+                  Move is a frustration become code — watching delivery get
+                  faster but more expensive. Somewhere along the way,
+                  convenience became a premium. Move is my way of rethinking
+                  that: an on-demand delivery app built on one idea — speed
+                  should be simple, and it should cost less.
                 </p>
               </Section>
             </div>
@@ -98,10 +110,10 @@ export default function StartUp() {
             {/* Attributes  */}
             <div className="mt-8">
               <Section title="ATTRIBUTES">
-                <div className="flex flex-wrap gap-3 text-gray-300 font-semibold tracking-wider text-[10px]">
-                  <span>CHEAPER</span>
-                  <span>CONVENIENT</span>
-                  <span>COMMUNITY</span>
+                <div className="flex flex-wrap gap-3 text-gray-300 font-semibold tracking-wider text-[11.5px]">
+                  <span>Cheaper</span>
+                  <span>Convinient</span>
+                  <span>Community</span>
                 </div>
               </Section>
             </div>
