@@ -18,9 +18,9 @@ export default function StartUp() {
         </section>
 
         {/*  R1 */}
-        <div className="grid grid-cols-2 border-b border-muted-foreground min-h-[550px]  ">
+        <div className="grid grid-cols-2 min-h-[550px]  ">
           {/* Left Column */}
-          <div className="flex flex-col justify-between p-8  border-r border-muted-foreground">
+          <div className="flex flex-col justify-between p-8  ">
             <div className="space-y-6">
               <Section title="BRAND">
                 <p className="text-xs font-semibold tracking-widest text-foreground">
@@ -66,12 +66,12 @@ export default function StartUp() {
           </div>
 
           {/* Right Column */}
-          <div className="flex items-center justify-center bg-white">
+          <div className="flex items-center pl-8 bg-none">
             <div className="flex items-center gap-0.5 ">
               <RectangleGoggles
                 className="w-[100px]  h-[100px]"
                 fill="#1424EA"
-                stroke="white"
+                stroke="black"
               />
               <span className=" bg-[#1424EA] rounded-full p-2.5 translate-y-2"></span>
             </div>
@@ -98,7 +98,7 @@ export default function StartUp() {
             <div className="space-y-4">
               <Section title="LOGO">
                 <p className="text-sm leading-relaxed text-foreground">
-                  Move is a frustration become code — watching delivery get
+                  Move is  frustration turn code — watching delivery get
                   faster but more expensive. Somewhere along the way,
                   convenience became a premium. Move is my way of rethinking
                   that: an on-demand delivery app built on one idea — speed
